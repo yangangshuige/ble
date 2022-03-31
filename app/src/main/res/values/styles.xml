@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Polaris.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Polaris.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!-- AppBarLayout样式 -->
+    <style name="PolarisAppBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:theme">@style/Theme.Polaris.AppBarOverlay</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="elevation">0dp</item>
+    </style>
+    <!-- Toolbar样式 -->
+    <style name="PolarisToolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="popupTheme">@style/Theme.Polaris.PopupOverlay</item>
+        <item name="titleTextColor">@color/black</item>
+        <item name="navigationIcon">@drawable/plr_back_icon</item>
+    </style>
+
+    <style name="PlrDialogNoBg" parent="android:Theme.DeviceDefault.Light.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="CustomTextView" parent="Widget.MaterialComponents.Button.TextButton">
+
+    </style>
+</resources>

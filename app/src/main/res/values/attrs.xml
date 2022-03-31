@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FullScreenCoordinatorLayout">
+        <attr name="android:statusBarColor" format="color" />
+        <attr name="android:navigationBarColor" format="color" />
+        <!-- 是否消费底部NavigationBar的高度，内部视图讲不会超过WindowInsets区域       -->
+        <attr name="consumeStatusBarHeight" format="boolean">false</attr>
+        <!-- 是否消费StatusBar的高度，内部视图讲不会超过WindowInsets区域       -->
+        <attr name="consumeNavigationBarHeight" format="boolean">false</attr>
+        <!-- used in layout only ,runtime code ignore       -->
+        <attr name="editModeStatusBarHeight" format="dimension" />
+        <attr name="editModeNavigationBarHeight" format="dimension" />
+    </declare-styleable>
+</resources>
